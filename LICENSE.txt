@@ -1,0 +1,53 @@
+MIT License
+
+Copyright (c) [2013] [Eden Denis Ferreira da Silva Lopes Santos]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Licença MIT
+
+Copyright (c) [2024] [Eden Denis Ferreira da Silva Lopes Santos]
+
+É concedida permissão, gratuitamente, a qualquer pessoa que obtenha uma cópia
+deste software e arquivos de documentação associados (o "Software"), para lidar
+no Software sem restrições, incluindo, sem limitação, os direitos
+usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender
+cópias do Software e permitir que as pessoas a quem o Software é
+capacitado para fazê-lo, sujeito às seguintes condições:
+
+O aviso de direitos autorais acima e este aviso de permissão serão incluídos em todos
+cópias ou partes substanciais do Software.
+
+O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSA OU
+IMPLÍCITAS, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO,
+ADEQUAÇÃO A UM DETERMINADO FIM E NÃO VIOLAÇÃO. EM HIPÓTESE ALGUMA O
+OS AUTORES OU DETENTORES DE DIREITOS AUTORAIS SERÃO RESPONSÁVEIS POR QUALQUER RECLAMAÇÃO, DANOS OU OUTROS
+RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, ATO ILÍCITO OU DE OUTRA FORMA, DECORRENTE DE,
+FORA DE OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS NEGOCIAÇÕES NO
+PROGRAMAS.
+
+# Referências
+
+[1] CHOOSE TEAM. ***Choose an open source license.*** Disponível em <https://choosealicense.com/>. Acessado em: 16/02/2024 09:52
+
+[2] FREECODECAMP. ***How to create and upload your first python package to pypi.*** Disponível em <https://www.freecodecamp.org/news/how-to-create-and-upload-your-first-python-package-to-pypi/> Acessado em: 16/02/2024 08:54
+
+[3] USER: JOELBARMETTELERUZH. ***How to upload your python package to pypi***. Disponível em: <https://medium.com/@joel.barmettler/how-to-upload-your-python-package-to-pypi-65edc5fe9c56#id_token=eyJhbGciOiJSUzI1NiIsImtpZCI6ImEzYmRiZmRlZGUzYmFiYjI2NTFhZmNhMjY3OGRkZThjMGIzNWRmNzYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJuYmYiOjE2OTAzNzg5MjAsImF1ZCI6IjIxNjI5NjAzNTgzNC1rMWs2cWUwNjBzMnRwMmEyamFtNGxqZGNtczAwc3R0Zy5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsInN1YiI6IjEwNDUyNjMwNzAwNzgyMDU3OTMyOCIsImVtYWlsIjoiZWRlbmRlbmlzQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhenAiOiIyMTYyOTYwMzU4MzQtazFrNnFlMDYwczJ0cDJhMmphbTRsamRjbXMwMHN0dGcuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJuYW1lIjoiRWRlbiBEZW5pcyBGZXJyZWlyYSBkYSBTaWx2YSBMb3BlcyBTYW50b3MiLCJwaWN0dXJlIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUFjSFR0ZXZFYkE1SWhJZHFFYXFMck9zNnJlTnYyaGM3SmZZN3owbGk2ejV6MnNHQlFVZT1zOTYtYyIsImdpdmVuX25hbWUiOiJFZGVuIERlbmlzIiwiZmFtaWx5X25hbWUiOiJGZXJyZWlyYSBkYSBTaWx2YSBMb3BlcyBTYW50b3MiLCJpYXQiOjE2OTAzNzkyMjAsImV4cCI6MTY5MDM4MjgyMCwianRpIjoiMWFiYWRiMmEyODZjMTI5ZDY4Y2I3ZmU4YTU4ZDAxOThkMTk3ZWE0NCJ9.WOlgHJIl7moO81tgj7fJQoFOdP_xwp0XLQqFsm_lXfXxJpRpdpO3d-LiFxb5msdasji_mCCGcvfqaXbp4Lz7KLhCp21Y5tqDMntTHJUX0yVB62OKcebcSqcX8pT__6VOwwHO_-LdrkwOOWqu2mmk10LbGUwY8whcWImY9GcFrPytpQiQmrDULe_3tofTlPT7nLFS3fFQCmz5M0glCcHVoFh4_Lue1vH7alTDBcY9V2nXBFFcAa0IniSFe08But0tUiwkKJDFznYjPp9fshiRb8bZshZcPu4veaM-3pjnBBOzcD3vsoAU4DU6PO7oh-RGZ1nC6Mndbko6Q9BEddvIoA>. Acessado em: 16/02/2024 08:57.;
+
+[4] USER: GIORGOS MYRIANTHOUS. ***How to upload your python package to pypi***. Disponível em: <https://towardsdatascience.com/how-to-upload-your-python-package-to-pypi-de1b363a1b3>. Acessado em: 16/02/2024 08:58.

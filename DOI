@@ -1,0 +1,28 @@
+DOI Badge
+
+This badge points to the latest released version of your repository. If you want a DOI badge for a specific release, please follow the DOI link for one of the specific releases and grab badge from the archived record.
+
+DOI
+
+10.5281/zenodo.10668919
+
+Markdown
+
+[![DOI](https://zenodo.org/badge/758287471.svg)](https://zenodo.org/doi/10.5281/zenodo.10668918)
+
+reStructuredText
+
+.. image:: https://zenodo.org/badge/758287471.svg
+  :target: https://zenodo.org/doi/10.5281/zenodo.10668918
+
+HTML
+
+<a href="https://zenodo.org/doi/10.5281/zenodo.10668918"><img src="https://zenodo.org/badge/758287471.svg" alt="DOI"></a>
+
+Image URL
+
+https://zenodo.org/badge/758287471.svg
+
+Target URL
+
+https://zenodo.org/doi/10.5281/zenodo.10668918
