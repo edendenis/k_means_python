@@ -1,8 +1,11 @@
 # k-means
 
+<<<<<<< HEAD
 [![DOI](https://zenodo.org/badge/758287471.svg)](https://zenodo.org/doi/10.5281/zenodo.10668918)
 
 
+=======
+>>>>>>> 11a03d5 (Initial release for register the application.)
 ## Resumo
 
 A aplicação de computação para o algoritmo k-means é uma técnica de agrupamento não supervisionado que organiza os dados em agrupamentos com base na similaridade. Ele atribui iterativamente pontos de dados aos centróides e recalcula os centróides com base na média dos pontos atribuídos até que a variação entre pontos e centróides seja minimizada.
