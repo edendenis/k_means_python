@@ -2,12 +2,9 @@
 # coding: utf-8
 
 # # k-means
-<<<<<<< HEAD
 # 
 # [![DOI](https://zenodo.org/badge/758287471.svg)](https://zenodo.org/doi/10.5281/zenodo.10668918)
 # 
-=======
->>>>>>> 11a03d5 (Initial release for register the application.)
 
 # ## Resumo
 # 

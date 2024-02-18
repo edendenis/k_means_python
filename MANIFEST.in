@@ -1,22 +1,27 @@
-include .gitattributes  # Inclui o arquivo de licença na distribuição. É uma prática comum incluir a licença sob a qual o software é distribuído.
-include .gitignore  # Inclui o arquivo de licença na distribuição. É uma prática comum incluir a licença sob a qual o software é distribuído.
-include .pylintrc  # Inclui o arquivo de licença na distribuição. É uma prática comum incluir a licença sob a qual o software é distribuído.
-include CITATION.bib  # Inclui o arquivo de licença na distribuição. É uma prática comum incluir a licença sob a qual o software é distribuído.
-include DOI  # Inclui o arquivo de licença na distribuição. É uma prática comum incluir a licença sob a qual o software é distribuído.
-include LICENSE  # Inclui o arquivo de licença na distribuição. É uma prática comum incluir a licença sob a qual o software é distribuído.
-include MANIFEST.in  # Inclui o arquivo de licença na distribuição. É uma prática comum incluir a licença sob a qual o software é distribuído.
-include README.ipynb  # Inclui o arquivo README.md, que geralmente contém informações sobre o projeto, como descrição, como instalar, usar, contribuir, etc.
-include README.md  # Inclui o arquivo README.md, que geralmente contém informações sobre o projeto, como descrição, como instalar, usar, contribuir, etc.
-include README.py  # Inclui o arquivo README.md, que geralmente contém informações sobre o projeto, como descrição, como instalar, usar, contribuir, etc.
 inlude banco_de_dados/  # Inclui o arquivo de licença na distribuição. É uma prática comum incluir a licença sob a qual o software é distribuído.
 incluse convert_ipynb_to_md_and_py.ipynb  # Inclui o arquivo de licença na distribuição. É uma prática comum incluir a licença sob a qual o software é distribuído.
 include create_and_activate_an_enviroment.ipynb  # Inclui o arquivo de licença na distribuição. É uma prática comum incluir a licença sob a qual o software é distribuído.
 include filter_nb_metadata.py  # Inclui o arquivo de licença na distribuição. É uma prática comum incluir a licença sob a qual o software é distribuído.
 include funcoes/  # Inclui o arquivo de licença na distribuição. É uma prática comum incluir a licença sob a qual o software é distribuído.
-include main_k_means.ipynb  # Inclui o arquivo de licença na distribuição. É uma prática comum incluir a licença sob a qual o software é distribuído.
-include pdfs/  # Inclui o arquivo de licença na distribuição. É uma prática comum incluir a licença sob a qual o software é distribuído.
+include main_sherlock.ipynb  # Inclui o arquivo de licença na distribuição. É uma prática comum incluir a licença sob a qual o software é distribuído.
 include pickles/  # Inclui o arquivo de licença na distribuição. É uma prática comum incluir a licença sob a qual o software é distribuído.
 include saidas/  # Inclui o arquivo de licença na distribuição. É uma prática comum incluir a licença sob a qual o software é distribuído.
+
+include .gitattributes  # Inclui o arquivo de licença na distribuição. É uma prática comum incluir a licença sob a qual o software é distribuído.
+include .gitignore  # Inclui o arquivo de licença na distribuição. É uma prática comum incluir a licença sob a qual o software é distribuído.
+include .pylintrc  # Inclui o arquivo de licença na distribuição. É uma prática comum incluir a licença sob a qual o software é distribuído.
+include CITATION.bib  # Inclui o arquivo de licença na distribuição. É uma prática comum incluir a licença sob a qual o software é distribuído.
+include CHANGES.txt  # Inclui o arquivo de licença na distribuição. É uma prática comum incluir a licença sob a qual o software é distribuído. 
+include DOI  # Inclui o arquivo de licença na distribuição. É uma prática comum incluir a licença sob a qual o software é distribuído.
+include LICENSE  # Inclui o arquivo de licença na distribuição. É uma prática comum incluir a licença sob a qual o software é distribuído.
+include MANIFEST.in  # Inclui o arquivo de licença na distribuição. É uma prática comum incluir a licença sob a qual o software é distribuído.
+include pyproject.toml  # Inclui o arquivo de licença na distribuição. É uma prática comum incluir a licença sob a qual o software é distribuído.
+include README.ipynb  # Inclui o arquivo README.md, que geralmente contém informações sobre o projeto, como descrição, como instalar, usar, contribuir, etc.
+include README.md  # Inclui o arquivo README.md, que geralmente contém informações sobre o projeto, como descrição, como instalar, usar, contribuir, etc.
+include README.py  # Inclui o arquivo README.md, que geralmente contém informações sobre o projeto, como descrição, como instalar, usar, contribuir, etc.
+include requirements.txt  # Inclui o arquivo README.md, que geralmente contém informações sobre o projeto, como descrição, como instalar, usar, contribuir, etc.
+include setup.cfg # Inclui o arquivo README.md, que geralmente contém informações sobre o projeto, como descrição, como instalar, usar, contribuir, etc.
+
 recursive-include docs *.txt *.md  # Inclui todos os arquivos .txt e .md no diretório docs e seus subdiretórios. Útil para incluir documentação detalhada com o pacote.
 recursive-include examples *.py  # Inclui todos os arquivos .py no diretório examples e seus subdiretórios. Isso permite que você distribua exemplos de como usar seu pacote.
 recursive-include data *.dat  # Inclui todos os arquivos .dat no diretório data e seus subdiretórios. Útil para pacotes que dependem de conjuntos de dados específicos.
