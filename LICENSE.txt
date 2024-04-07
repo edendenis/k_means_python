@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) [2013] [Eden Denis Ferreira da Silva Lopes Santos]
+Copyright (c) [2024] [Eden Denis Ferreira da Silva Lopes Santos]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
