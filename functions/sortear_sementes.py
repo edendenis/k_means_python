@@ -1,12 +1,8 @@
 import numpy as np
 
+# n = 6
 # K = 4
-# sementes = [[1, 4],
-#             [5, 2],
-#             [6, 1],
-#             [2, 5],
-#             [3, 4],
-#             [2, 3]]
+# sementes = [[1, 4], [5, 2], [6, 1], [2, 5], [3, 4], [2, 3]]
 # sementes = np.array(sementes)
 # # n = Número total de elementos
 # n = 6
@@ -17,12 +13,8 @@ def sortear_sementes(n, K, sementes):
 
     :param n: Número máximo de elementos
     :param K: Número de k-clusters
-    :param sementes: Sementes do BIG Data
     :return: sementes_sorteadas = Array das sementes sorteadas
     """
-
-    # Manter repetitividade dos números pseudo-aleatórios:
-    # np.random.seed(42)
 
     comprimento_do_arranjo = False
     comprimento_do_set = True
@@ -36,9 +28,9 @@ def sortear_sementes(n, K, sementes):
         indices_das_sementes_sorteadas = set(indices_das_sementes_sorteadas)
         comprimento_do_set = len(indices_das_sementes_sorteadas)
         num_de_sorteios = num_de_sorteios + 1
-
     indices_das_sementes_sorteadas = \
         np.array(list(indices_das_sementes_sorteadas), dtype=int)
+
 
     sementes_sorteadas = []
     # # para todas os k-clusters fazer

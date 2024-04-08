@@ -14,13 +14,21 @@ import os as os
 #     populacao,\
 #     ks_min_otimos = pkl.load(f)
 
-def gerar_relatorio_em_planilha(endereco, banco_de_dados, distancias_otimas, ks_min_otimos, k):
+def gerar_relatorio_em_planilha(endereco,
+                                banco_de_dados,
+                                distancias_otimas,
+                                ks_min_otimos,
+                                k,
+                                k_large,
+                                num_max_I):
     """
-    :param endereco: Endereço do arquivo de entrada, incluindo o caminho completo e a extensão.
-    :param banco_de_dados: Banco de dados em forma de DataFrame ou estrutura compatível.
-    :param distancias_otimas: Array de distâncias ótimas para serem normalizadas.
-    :param ks_min_otimos: Arranjo contendo os k-clusters mínimos ótimos.
-    :param k: Número de k-clusters.
+    :param endereco: Endereço do arquivo de entrada, incluindo o caminho completo e a extensão. str.
+    :param banco_de_dados: Banco de dados em forma de DataFrame ou estrutura compatível. object.
+    :param distancias_otimas: Array de distâncias ótimas para serem normalizadas. float.
+    :param ks_min_otimos: Arranjo contendo os k-clusters mínimos ótimos. float.
+    :param k: Número de k-clusters. int.
+    :param k_large: Número total de cluster. int. 
+    :param num_max_I: Número máximo de iterações.
     :return: None. Gera um arquivo Excel com os resultados.
     """
 
@@ -45,7 +53,8 @@ def gerar_relatorio_em_planilha(endereco, banco_de_dados, distancias_otimas, ks_
     print(elementos_associados)
 
     # Extrair o nome base do arquivo de entrada do endereco
-    nome_base = os.path.splitext(os.path.basename(endereco))[0]
+    nome_base = os.path.splitext(os.path.basename(endereco))[0] # + \
+        # "_de_" + str(k) + "_ate_" + str(k_large) + "_clusters_com_" + str(num_max_I) + "_iteracoes"
 
     # Se o nome_base terminar com um sublinhado, removemos ele
     if nome_base.endswith('_'):
@@ -57,7 +66,7 @@ def gerar_relatorio_em_planilha(endereco, banco_de_dados, distancias_otimas, ks_
         os.makedirs(pasta_base)
 
     # O arquivo será salvo dentro da pasta correspondente ao nome do arquivo de entrada
-    nome_arquivo = f"{nome_base}_{k}.xlsx"
+    nome_arquivo = f"{nome_base}_cluster_de_numero_{k}.xlsx"
     endereco_completo_arquivo = os.path.join(pasta_base, nome_arquivo)
 
     # Criação do ExcelWriter e salvamento do arquivo
