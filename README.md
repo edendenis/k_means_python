@@ -1,6 +1,30 @@
-# k-means
+<!-- LOGOTIPO DO PROJETO -->
+<div style="display: flex; justify-content: center;">
+   <a href="https://github.com/othneildrew/Best-README-Template">
+     <img src="figures/logotipo_edf_vetorizado_fundo_roxo_e_nome.png" alt="Logo" width="80" height="80">
+   </a>
+</div>
 
-[![DOI](https://zenodo.org/badge/758287471.svg)](https://zenodo.org/doi/10.5281/zenodo.10668918)
+<h3 align="center">EDF k-means Python</h3>
+
+<div style="display: flex; justify-content: center;">
+  <a href="https://zenodo.org/doi/10.5281/zenodo.10668919">
+    <img src="https://zenodo.org/badge/758237447.svg" alt="DOI">
+  </a>
+</div>
+
+<p align="center">
+ A aplicação de computação para o algoritmo k-means é uma técnica de agrupamento não supervisionado que organiza os dados em agrupamentos com base na similaridade. Ele atribui iterativamente pontos de dados aos centróides e recalcula os centróides com base na média dos pontos atribuídos até que a variação entre pontos e centróides seja minimizada.
+ <br />
+ <a href="https://github.com/edendenis/k_means_python"><strong>Explore os documentos »</strong></a>
+ <br />
+ <br />
+ <a href="https://github.com/edendenis/k_means_python">Ver demonstração</a>
+ ·
+ <a href="https://github.com/edendenis/k_means_python">Relatar bug</a>
+ ·
+ <a href="https://github.com/edendenis/k_means_python">Solicitar recurso</a>
+</p>
 
 
 ## Resumo
@@ -9,20 +33,184 @@ A aplicação de computação para o algoritmo k-means é uma técnica de agrupa
 
 ## _Abstract_
 
-_Computation application for the k-means algorithm is an unsupervised clustering technique that organizes data into clusters based on similarity. It iteratively assigns data points to centroids and recalculates centroids based on the average of assigned points until the variance between points and centroids is minimized._
+_The computing application for the k-means algorithm is an unsupervised clustering technique that organizes data into groupings based on similarity. It iteratively assigns data points to centroids and recalculates the centroids based on the average of the assigned points until the variation between points and centroids is minimized._
 
-## Revisão(ões)/Versão(ões)
+### Construído com
 
-| Revisão número | Data da revisão | Descrição da revisão                                    | Autor da revisão                                |
-|:--------------:|:---------------:|:--------------------------------------------------------|:------------------------------------------------|
-| 0              | 15/09/2022      | <ul><li>Revisão inicial/criação do documento.</li></ul> | <ul><li>Eden Denis F. da S. L. Santos</li></ul> |
+Esta seção deve listar todas as principais estruturas/bibliotecas usadas para inicializar seu projeto. Deixe quaisquer complementos/plugins para a seção de agradecimentos. Aqui estão alguns exemplos.
+
+* [![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+* [![Anaconda](https://img.shields.io/badge/Anaconda-44A833?style=flat-square&logo=anaconda&logoColor=white)](https://www.anaconda.com/)
+
+<p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
+
+<!-- COMEÇANDO -->
+### Começando
+
+Este é um exemplo de como você pode dar instruções sobre como configurar seu projeto localmente.
+Para obter uma cópia local instalada e funcionando, siga estas etapas simples de exemplo.
+
+### Pré-requisitos
+
+Este é um exemplo de como listar os itens necessários para usar o software e como instalá-los.
+* Python 3.8
+* Anaconda 24.1.0
+* Git
+* IDE para executar o arquivo `.ipynb` (PyCharm, Spyder, VS Code etc.)
+
+<p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
 
-## 1. Como executar a aplicação
+## Guia de instalação
+
+### Instalar o Git
+
+Verifique se você tem o Git instalado no seu computador. Se não tiver, você pode baixá-lo e instalá-lo a partir do site oficial do Git: https://git-scm.com/downloads
+
+Abra o Git Bash. Você pode fazer isso clicando com o botão direito do mouse em qualquer diretório e selecionando a opção "Git Bash Here" no menu de contexto.
+
+<p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
+
+## Guia de instalação
+
+### Instalar o Git
+
+Verifique se você tem o Git instalado no seu computador. Se não tiver, você pode baixá-lo e instalá-lo a partir do site oficial do Git: https://git-scm.com/downloads
+
+Abra o Git Bash. Você pode fazer isso clicando com o botão direito do mouse em qualquer diretório e selecionando a opção "Git Bash Here" no menu de contexto.
+
+<p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
+
+#### `Windows` [2]
+
+Para gerar uma chave SSH no Windows para uso no GitLab, você pode seguir as etapas abaixo:
+
+1. Verifique se você tem o Git instalado no seu computador. Se não tiver, você pode baixá-lo e instalá-lo a partir do site oficial do Git: https://git-scm.com/downloads
+
+2. Abra o Git Bash. Você pode fazer isso clicando com o botão direito do mouse em qualquer diretório e selecionando a opção "Git Bash Here" no menu de contexto.
+
+3. No Git Bash, digite o seguinte comando para gerar uma nova chave SSH `ssh-keygen -t rsa -C "seu_email@exemplo.com"` (`@gitlab.com`)
+
+Certifique-se de substituir `seu_email@exemplo.com` pelo seu endereço de e-mail associado à sua conta do GitLab. Você pode deixar a senha em branco pressionando Enter duas vezes.
+
+4. Será solicitado que você forneça um local para salvar a chave. Você pode simplesmente pressionar Enter para aceitar o local padrão (geralmente `C:\Usuários\SeuNome.ssh\id_rsa`).
+
+5. O comando irá gerar a chave SSH pública e privada. Por padrão, a chave pública será salva como `id_rsa.pub`.
+
+6. Agora, você precisa adicionar a chave SSH pública à sua conta do GitLab. Abra o GitLab no seu navegador e faça login na sua conta.
+
+7. No canto superior direito da página, clique na sua foto de perfil e vá para `Settings` (Configurações) no menu suspenso.
+
+8. No menu lateral esquerdo, clique em `SSH Keys` (Chaves SSH).
+
+9. No campo 'Key', abra o arquivo `id_rsa.pub` (ou qualquer nome que você tenha dado à sua chave pública) que você gerou anteriormente. Copie todo o conteúdo do arquivo e cole no campo "Key" no GitLab.
+
+10. Dê um nome para a chave, por exemplo, `Meu Computador` e clique em `Add Key` (Adicionar chave).
+
+Agora você gerou e adicionou com sucesso uma chave SSH para uso no GitLab. Você poderá usar essa chave para autenticar suas operações do GitLab usando o Git no Windows.
+
+Depois de copiar a chave pública, você poderá fazer login no servidor remoto sem precisar digitar a senha toda vez, desde que a chave privada esteja presente no sistema local e a frase secreta (se fornecida) esteja correta.
+
+Lembre-se de proteger sua chave privada e evitar compartilhá-la com outras pessoas. É recomendável usar autenticação por chave SSH em vez de senhas, pois oferece uma camada adicional de segurança.
+
+<p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
+
+### Atualizar pacotes `pip` e `setuptools` [3]
+
+É recomendado que sejam atualizado os pacotes, como segue:
+
+1. **Verificar a versão do `pip`:** Verifique se você está usando uma versão atualizada do `pip`. Execute o seguinte comando para atualizá-lo, caso necessário: `pip install --upgrade pip`
+
+2. **Verificar a versão do `setuptools`:** Verifique se você possui a versão mais recente do pacote `setuptools` instalada. Execute o seguinte comando para atualizá-lo, se necessário:`pip install --upgrade setuptools`
+
+3. **Verificar a versão do `wheel`:** O erro menciona que a opção `bdist_wheel` é inválida. Isso pode acontecer se o pacote `wheel` estiver desatualizado. Execute o seguinte comando para atualizar o pacote `wheel` com o comando: `pip install --upgrade wheel`
+
+4. É recomendado reiniciar o Sistema Operacional (SO).
+
+### Clonar o repositório do Git e instalar o pacote `proplib`
+
+#### `Linux`
+
+1. **Clone o repositório:**
+
+  - **Pelo terminal:** `git clone git@github.com:edendenis/k_means_python.git`
+
+  - **(Ou)** Fazer o _download_ do repositório `.zip` pela página web do GitHub, botão ao lado do botão azul `clone` à direita
+
+  <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
+
+#### `Windows`
+
+1. **Clone o repositório:**
+
+  - **Pelo terminal:** `git clone git@github.com:edendenis/rbf_python.git`
+
+  - **(Ou) Fazer o _download_ do repositório `.zip` pela página web do GitHub, botão ao lado do botão azul `clone` à direita
+
+  <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
+
+## Como executar a aplicação
 
 1. Abrir o arquivo `main_<nome_da_aplicacao>.ipynb` o qual está com comentários, alterar o banco de dados (existem exemplos de bancos de dados) na pasta que deverá ser utilizado para a execução e executar todas as células. 
     
     Perceber que o <nome_da_aplicacao> trata-se, redudantemente, do nome da aplicação. Coloquei desta forma, pois quis, por ora, generalizar o arquivo `README.md` para poder criar o repositório de cada uma das aplicações que desenvolvi ao longo da minha carreira.
+
+<!-- LICENÇA -->
+## Licença
+
+Distribuído sob a licença MIT. Consulte `LICENSE.txt` para obter mais informações.
+
+<p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
+
+<!-- ROTEIRO -->
+## Roteiro
+
+- [x] Adicionar registro de alterações
+- [x] Adicionar links de volta ao topo
+- [x] Adicionar modelos adicionais com exemplos
+- [x] Suporte multilíngue
+     - [x] Espanhol
+     - [x] Inglês
+     - [x] Português
+     - [x] Português brasileiro 
+
+Consulte os [problemas abertos](https://github.com/edendenis/k_means_python/issues) para obter uma lista completa dos recursos propostos (e problemas conhecidos).
+
+<p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
+
+
+<!-- CONTRIBUIÇÔES -->
+## Contribuições
+
+As contribuições são o que tornam a comunidade de código aberto um lugar incrível para aprender, inspirar e criar. Qualquer contribuição que você fizer será **muito apreciada**.
+
+Se você tiver uma sugestão que possa melhorar isso, bifurque o repositório e crie uma solicitação `pull`. Você também pode simplesmente abrir um problema com a tag “aprimoramento”.
+Não se esqueça de dar uma estrela ao projeto! Obrigado novamente!
+
+1. Bifurque o projeto
+2. Crie sua ramificação de recursos (`git checkout -b feature/AmazingFeature`)
+3. Confirme suas alterações (`git commit -m 'Add some AmazingFeature'`)
+4. Envie para a filial (`git push origin feature/AmazingFeature`)
+5. Abra uma solicitação pull
+
+<p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
+
+
+<!-- ACKNOWLEDGMENTS -->
+## Agradecimentos
+
+* [Best README Template](https://github.com/othneildrew/Best-README-Template?tab=readme-ov-file)
+* [Choose an Open Source License](https://choosealicense.com)
+* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
+* [Malven's Grid Cheatsheet](https://grid.malven.co/)
+* [Img Shields](https://shields.io)
+* [GitHub Pages](https://pages.github.com)
+* [Font Awesome](https://fontawesome.com)
+* [React Icons](https://react-icons.github.io/react-icons/search)
+
+<p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
+
 
 ## Referências
 
@@ -71,6 +259,4 @@ _Computation application for the k-means algorithm is an unsupervised clustering
 [22] GRUS, J.. ***Data science do zero***. Rio de Janeiro, 1a ed. edição, 2009.
 
 [23] COMMUNITY. ***Scipy.cluster.hierarchy.dendrogram***. Disponível em: <https://docs.scipy.org/doc/scipy/reference/generated/scipy.cluster.hierarchy.dendrogram.html>. Acessado em: 2018-
-
-
 
