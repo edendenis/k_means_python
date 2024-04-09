@@ -55,6 +55,7 @@ import pickle as pkl
 def gerar_grafico_dendrograma(endereco,
                               banco_de_dados,
                               distancias_otimas,
+                              num_de_k_inicial,
                               k,
                               populacao,
                               titulo_do_eixo_x_do_dendrograma,
@@ -70,7 +71,8 @@ def gerar_grafico_dendrograma(endereco,
     :param populacao: Número de entidades na população.
     :param titulo_do_eixo_x_do_dendrograma: Título do eixo X do gráfico.
     :param k_large: Número total de cluster. int. 
-    :param num_max_I: Número máximo de iterações.
+    :param num_max_I: Número máximo de iterações. int.
+
     :return None
     """
     
@@ -105,8 +107,8 @@ def gerar_grafico_dendrograma(endereco,
     figure.tight_layout()  # Use 'figure' em vez de 'plt' para aplicar tight_layout na figura inteira
 
     # Processamento do nome base para remoção de segmentos numéricos no final
-    nome_base = os.path.splitext(os.path.basename(endereco))[0] # + \
-        # "_de_" + str(k) + "_ate_" + str(k_large) + "_clusters_com_" + str(num_max_I) + "_iteracoes"
+    nome_base = os.path.splitext(os.path.basename(endereco))[0].replace("__", "_") + \
+        "_de_" + str(num_de_k_inicial) + "_ate_" + str(k_large) + "_clusters_com_" + str(num_max_I) + "_iteracoes"
     nome_base_parts = nome_base.split('_')
 
     # Remover a última parte se for numérica
@@ -119,7 +121,8 @@ def gerar_grafico_dendrograma(endereco,
         os.makedirs(pasta_base)
 
     # Caminho completo do arquivo de saída
-    endereco_completo = os.path.join(pasta_base, f"dendrograma_{nome_base}_cluster_de_numero_{k}.png")
+    endereco_completo = \
+        os.path.join(pasta_base, f"dendrograma_{nome_base}_cluster_de_numero_{k}.png")
 
     # Salvando a figura ajustada
     figure.savefig(endereco_completo, dpi=300, bbox_inches='tight')

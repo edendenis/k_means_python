@@ -7,7 +7,7 @@ from matplotlib.ticker import MaxNLocator
 # with open("objetos.pkl", "rb") as f:
 #     endereco, \
 #     num_de_k_inicial, \
-#     K, \
+#     k_large, \
 #     WSs_total_otimo_lista, \
 #     banco_de_dados, \
 #     distancias_otimas, \
@@ -47,19 +47,20 @@ from matplotlib.ticker import MaxNLocator
 
 def gerar_grafico_elbow_data(endereco,
                              num_de_k_inicial,
-                             K,
+                             k_large,
                              WSs_total_otimo,
                              num_max_I):
     """
     Gera e salva o gráfico Elbow com base nos dados fornecidos.
 
-    :param endereco: Endereço do banco de dados.
-    :param num_de_k_inicial: Número inicial de clusters.
-    :param K: Número total de clusters.
-    :param WSs_total_otimo: Lista com a soma total de quadrados dentro dos clusters.
+    :param endereco: Endereço do banco de dados. str.
+    :param num_de_k_inicial: Número inicial de clusters. int.
+    :param k_large: Número total de clusters. int.
+    :param WSs_total_otimo: Lista com a soma total de quadrados dentro dos clusters. list.
     :param k_large: Número total de cluster. int. 
-    :param num_max_I: Número máximo de iterações.
-    :return: Gráfico do Elbow Data.
+    :param num_max_I: Número máximo de iterações. int.
+ 
+    :return: Gráfico do Elbow Data. object.
     """
 
     plt.close('all')
@@ -68,43 +69,51 @@ def gerar_grafico_elbow_data(endereco,
     WSs_total_otimo_normalizado = WSs_total_otimo / np.max(WSs_total_otimo)
 
     # Gerar o gráfico Elbow
-    x = np.arange(num_de_k_inicial, K + 1, 1)
-    fig, ax = plt.subplots(figsize=(24, 11))
+    x = np.arange(num_de_k_inicial, k_large + 1, 1)
+    [figure, subcharts] = plt.subplots(figsize=(24, 11))
 
     # Plotar os dados
-    ax.plot(x, WSs_total_otimo_normalizado, color="b", marker="o", linestyle="-")
+    subcharts.plot(x, WSs_total_otimo_normalizado, color="b", marker="o", linestyle="-")
 
     # Anotações em cada ponto do gráfico
     for i, txt in enumerate(WSs_total_otimo_normalizado):
         # Converter cada elemento para escalar se for um array numpy de um elemento
         valor = txt if np.isscalar(txt) else txt.item()
-        ax.annotate(f'{valor:.2f}', (x[i], valor), size=10)
+        subcharts.annotate(f'{valor:.2f}', (x[i], valor), size=10)
 
     # Configuração dos limites, labels e título
-    ax.set_xlim([0, K + 1])
-    ax.set_xlabel("$ k $")
-    ax.set_ylabel("$ WS_{Total} $ Normalizado")
-    ax.set_title(r"Elbow Data Chart")
+    subcharts.set_xlim([0, k_large + 1])
+    subcharts.set_xlabel("$ k $")
+    subcharts.set_ylabel("$ WS_{Total} $ Normalizado")
+    subcharts.set_title(r"Elbow Data Chart")
 
     # Configurar a localização dos marcadores no eixo x para serem números inteiros
-    ax.xaxis.set_major_locator(MaxNLocator(integer=True))
+    subcharts.xaxis.set_major_locator(MaxNLocator(integer=True))
 
     # Ajuste automático do layout
     plt.tight_layout()
 
-    # Criar diretório se não existir
-    pasta_base = os.path.join('outputs', os.path.splitext(endereco)[0])
+    # Processamento do nome base para remoção de segmentos numéricos no final
+    nome_base = os.path.splitext(os.path.basename(endereco))[0].replace("__", "_") + \
+        "_de_" + str(num_de_k_inicial) + "_ate_" + str(k_large) + "_clusters_com_" + str(num_max_I) + "_iteracoes"
+    nome_base_parts = nome_base.split('_')
+
+    # Remover a última parte se for numérica
+    if nome_base_parts[-1].isdigit():
+        nome_base = '_'.join(nome_base_parts[:-1])
+
+    # Criação do diretório de saída se não existir
+    pasta_base = os.path.join('outputs', nome_base)
     if not os.path.exists(pasta_base):
         os.makedirs(pasta_base)
 
     # Caminho completo do arquivo de saída
-    endereco_completo = os.path.join(pasta_base, f"{os.path.splitext(endereco)[0]}_elbow_data_chart_{K}.jpg")
-
+    endereco_completo = \
+        os.path.join(pasta_base, f"elbow_data_chart_{nome_base}_cluster_de_numero_{k_large}.png")
+    
     # Salvando a figura ajustada
-    fig.savefig(endereco_completo, dpi=300, bbox_inches='tight')
-
-    # Fechar a figura após salvar
-    plt.close(fig)
+    figure.savefig(endereco_completo, dpi=300, bbox_inches='tight')
+    plt.close(figure)  # Fechando a figura especificamente
 
 # A função pode ser chamada da seguinte forma:
-# gerar_grafico_elbow_data(endereco, num_de_k_inicial, K, WSs_total_otimo_lista)
+# gerar_grafico_elbow_data(endereco, num_de_k_inicial, k_large, WSs_total_otimo_lista)
