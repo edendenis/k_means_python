@@ -70,7 +70,7 @@ def gerar_grafico_elbow_data(endereco,
 
     # Gerar o gráfico Elbow
     x = np.arange(num_de_k_inicial, k_large + 1, 1)
-    [figure, subcharts] = plt.subplots(figsize=(24, 11))
+    [figure, subcharts] = plt.subplots(figsize=(16, 11))
 
     # Plotar os dados
     subcharts.plot(x, WSs_total_otimo_normalizado, color="b", marker="o", linestyle="-")

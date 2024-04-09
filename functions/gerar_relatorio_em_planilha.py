@@ -49,11 +49,11 @@ def gerar_relatorio_em_planilha(endereco,
     # Atualizar DataFrame dos elementos associados
     elementos_associados = pd.DataFrame(np.array(elementos_associados),
                                         index=dados_a_serem_analisados,
-                                        columns=["Próximo de"])
+                                        columns=["Distâncias ótimas normalizadas" , "Próximo de"])
 
     # Ajuste na linha de ordenação: agora inclui duas colunas com direções específicas
     elementos_associados = \
-        elementos_associados.sort_values(by=["Próximo de"],
+        elementos_associados.sort_values(by=["Próximo de", "Distâncias ótimas normalizadas"],
                                          ascending=[True, True])
     # Exibir o DataFrame resultante
     print(elementos_associados)

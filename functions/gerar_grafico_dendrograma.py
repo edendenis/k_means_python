@@ -85,7 +85,7 @@ def gerar_grafico_dendrograma(endereco,
     np.set_printoptions(precision=4, suppress=True)
     [figure, subchart] = plt.subplots(nrows=1, ncols=1,
                                     sharex=True, sharey=False,
-                                    figsize=(24, 11))
+                                    figsize=(16, 11))
 
     # Geração do dendrograma
     produtos = banco_de_dados.iloc[:, 0].tolist()
