@@ -154,9 +154,49 @@
 
 # ## Como executar a aplicação
 # 
-# 1. Abrir o arquivo `main_<nome_da_aplicacao>.ipynb` o qual está com comentários, alterar o banco de dados (existem exemplos de bancos de dados) na pasta que deverá ser utilizado para a execução e executar todas as células. 
+# 1. Abrir o arquivo `main_k_means.ipynb` o qual está com comentários;
+# 
+# 2.Dentro do arquivo `main_k_means.py`, na Seção `Carregamento, armazenamento e manipulação de dados`, alterar o caminho para o banco de dados que deverá ser utilizado para a execução, por exemplo:
+# 
+#     ```
+#     # CARREGAMENTO, ARMAZENAMENTO E MANIPULAÇÃO DO DADOS: ---
+#     endereco = "databases/aeronaves_militares_arbitrado_sem_data_de_entrada_de_operacao.xlsx"
+#     ```
+# 
+# 3. A partir daqui, você pode optar por executar o código pelo `Terminal Emulator` ou através de um editor como o `PyCharm`, `Spyder` e/ou `VS Code`, como segue.
+# 
+# ### Executar a partir do `Terminal Emulator`
+# 
+# 1. **Digitar o 'Número do k inicial'**: Como por exemplo: `Digitar o 'Número do k inicial' = 2`
 #     
-#     Perceber que o <nome_da_aplicacao> trata-se, redudantemente, do nome da aplicação. Coloquei desta forma, pois quis, por ora, generalizar o arquivo `README.md` para poder criar o repositório de cada uma das aplicações que desenvolvi ao longo da minha carreira.
+#     - Trata-se de um número inteiro **NÃO** negativo;
+# 
+#     - É recomendado o mínimo de `2` ou;
+# 
+#     - Caso queira executar a aplicação para um único k-_cluster_, o número dk `k inicial` será igual o `Número total de k-_clusteres` que será solicitado no Item a seguir.
+# 
+# 2 **Digitar o 'Número total de k-clusters'**: Como por exemplo: `Digitar o 'Número de total de k-clusters' = 20`
+#     
+#     - Trata-se de um número inteiro **NÃO** negativo;
+#     
+#     - É recomendado um número mínimo, por exemplo, `10`, `15` ou `20` para que `Elbow Data Chart` (Gráfico de Dados de Cotovelo) indique o número de k-_clusteres_ idela que os dados devem ser agrupados. Tudo isso será indicado pela "quina" gerada pelo gráfico, por exemplo.
+# 
+# 3 **Digitar o 'Número total de iterações'**: Como por exemplo: `Digitar o 'Número total de iterações' = 1000`
+#     
+#     - Trata-se de um número inteiro **NÃO** negativo;
+#     
+#     - É recomendado um número mínimo de, pelo menos, `1000` iterações, e qual pode e deve ser alterada para valores maiores (`2000`, `4000`, `8000` etc.) em execuções posteriores, para validar se os resultados convergem.
+#     
+#     - Em geral, a aplicação é executada em minutos para a maior parte dos problemas, mas cade ao usuário, ajustar à sua necessidade, mesmo que "perca" na precisão da solução, mas ganhe no custo computacional (tempo).
+# 
+# 4 **Digitar o 'Título do Eixo x do Dendrograma'**: Como por exemplo: `Digitar o 'Título do Eixo x do Dendrograma': Aeronaves militares`
+# 
+#     - Trata-se de um texto;
+# 
+# 5. Os resultados, ou seja, dados de saída (_outputs_), serão salvos na subpasta `outputs/` que está dentro do projeto.
+# 
+# <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
+# 
 
 # <!-- LICENÇA -->
 # ## Licença
