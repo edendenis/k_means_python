@@ -146,7 +146,7 @@
 # 
 # 1. **Clone o repositório:**
 # 
-#   - **Pelo terminal:** `git clone git@github.com:edendenis/rbf_python.git`
+#   - **Pelo terminal:** `git clone git@github.com:edendenis/k_means_python.git`
 # 
 #   - **(Ou) Fazer o _download_ do repositório `.zip` pela página web do GitHub, botão ao lado do botão azul `clone` à direita
 # 
