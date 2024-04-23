@@ -1,7 +1,7 @@
 <!-- LOGOTIPO DO PROJETO -->
 <div style="display: flex; justify-content: center;">
    <a href="https://github.com/edendenis/k_means_python">
-     <img src="figures/logotipo_edf_vetorizado_fundo_roxo_e_nome.png" alt="Logo" width="80" height="80">
+     <img src="figures/gold_edf_technology_logo_transparent_background_and_gold_name.png" alt="Logo" width="160" height="160">
    </a>
 </div>
 
