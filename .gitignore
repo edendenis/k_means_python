@@ -2,26 +2,10 @@
 *input_*.py
 *input.py
 # Except these ones...
-!inputs_templates/LPRE/components/thrust_chamber_assembly/TCA_input_RD109.py
-!inputs_templates/LPRE/components/thrust_chamber_assembly/TCA_input_RD107.py
-!inputs_templates/LPRE/components/thrust_chamber_assembly/injector_design_input.py
-!inputs_templates/LPRE/components/thrust_chamber_assembly/injector_analysis_input.py
-!inputs_templates/LPRE/components/pump/pump_input_design_ovsyannikov_1973.py
-!inputs_templates/LPRE/components/pump/pump_input_design_ovsyannikov_1996.py
-!tests/util_tests/check_modules/input_test1.py
-!tests/util_tests/check_modules/input_test2_1c8203.py
-!tests/LPRE_tests/components_tests/thrust_chamber_assembly_tests/TCA_input_dummy_predefined_design.py
-!tests/LPRE_tests/components_tests/thrust_chamber_assembly_tests/TCA_input_dummy_analysis.py
 
 # Also ignore folders inputs/ and outputs/
 inputs/
 outputs/
-
-# CEA files
-proplib/util/software_interfaces/cea/*.inp
-proplib/util/software_interfaces/cea/*.out
-proplib/util/software_interfaces/cea/*.plt
-!proplib/util/software_interfaces/cea/thermo.out
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
